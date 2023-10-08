@@ -1,15 +1,41 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'catalog/css/style.css' %}">
 </head>
 <body>
-    <div class="header">
-        <div class='wrapper'></div>
-    </div>
+    <header class="header">
+        <div class='wrapper'>
+            <div class="header__wrapper">
+                <div class="header__name">
+                    <a class="header__name" href="{% url 'index' %}">Ремонт ноутбука</a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="{% url 'index' %}">1 компания</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="{% url 'index' %}">1 компания</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="{% url 'index' %}">1 компания</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="{% url 'index' %}">1 компания</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="{% url 'index' %}">1 компания</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
     <script type="text/javascript" src="{% static 'js/main.js' %}"+></script>
 </body>
 </html>

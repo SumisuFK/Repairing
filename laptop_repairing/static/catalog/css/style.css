@@ -1,0 +1,36 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.header__name {
+    flex-direction: column;
+}
+
+.header__list {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    height: 0;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header__item {
+    margin-right: 30px;
+    margin-top: 5px;
+}
+
+li {
+    list-style: none;
+}
