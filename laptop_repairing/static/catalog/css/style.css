@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-.header__name {
-    flex-direction: column;
-}
-
 .header__list {
     flex-wrap: wrap;
     display: flex;
@@ -22,8 +18,8 @@ a {
 .header__wrapper {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .header__item {
@@ -33,4 +29,10 @@ a {
 
 li {
     list-style: none;
+}
+
+.intro {
+    height: 100vh;
+    background: url(../static/catalog/22.jpg) no-repeat;
+    background-size: cover;
 }
