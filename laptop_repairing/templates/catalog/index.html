@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ремонт ноутбуков</title>
     <link rel="stylesheet" type="text/css" href="{% static 'catalog/css/style.css' %}">
 </head>
 <body>
-    <header class="header">
-        <div class='wrapper'>
+    <div class='wrapper'>
+        <header class="header">
             <div class="header__wrapper">
                 <div class="header__name">
-                    <a class="header__name" href="{% url 'index' %}">Ремонт ноутбука</a>
+                    <a href="{% url 'index' %}" class="header__name">Ремонт ноутбука</a>
                 </div>
                 <nav class="header__nav">
                     <ul class="header__list">
@@ -34,12 +34,62 @@
                     </ul>
                 </nav>
             </div>
-        </div>
-    </header>
-
+        </header>
+    </div>
     <main class="main">
+        <section class="rating">
+            <div class="rating__wrapper">
+                <div class="rating__container">
+                    <div class="rating__body">
+                        <h1>ТОП 10 СЕРВИСОВ ПО РЕМОНТУ НОУТБУКА В СПБ.</h1>
+                        <div class="rating__btn">
+                            <a href="#!" class="btn">РЕМОНТ НОУТБУКОВ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="intro">
-            
+            <div class="intro__body rating__container">
+                <p>Рейтинг сервисов по ремонту ноутбуков в Санкт-Петербурге 2022-2023 года содержит ТОП-10 фирм, занимающихся ремонтом ноутбуков, компьютеров и телефонов. Так же некоторые компании профилируются по ремонту другой бытовой техники</p>
+                <p>Вы найдете актуальную информацию об отзывах клиентов.</p>
+                <p>Подбирайте надежный сервис ремонта ноутбуков по любому критерию: цена/качество, надежности, оценке покупателей.</p>
+            </div>
+        </section>
+        <section>
+            <section class="firm">
+                <div class="firm__container">
+                    <div class="firm__name">
+                        <div class="firm__logo">
+                            <picture><img src="{% static 'media/firms/estetik-logo.png' %}" alt="1 компания"></picture>
+                        </div>
+                        <h2>НАЗВАНИЕ</h2>
+                    </div>
+                    <div class="firm__body">
+                        <article>
+                            <div class="firm__body__container">
+                                <div class="firm__body__picture">
+
+                                </div>
+                                <div class="firm__body__content">
+                                    <div class="firm__body__info">
+
+                                    </div>
+                                    <div class="firm__body__btn">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="firm__body__feedback">
+                                <h3>ОТЗЫВЫ</h3>
+                                <div class="firm__feedback">
+
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 
