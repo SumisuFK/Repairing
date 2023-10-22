@@ -17,22 +17,42 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="{% url 'index' %}">1 компания</a>
+                            <a href="{% url 'index' %}"  class="header__link">1 компания</a>
                         </li>
                         <li class="header__item">
-                            <a href="{% url 'index' %}">1 компания</a>
+                            <a href="{% url 'index' %}" class="header__link">2 компания</a>
                         </li>
                         <li class="header__item">
-                            <a href="{% url 'index' %}">1 компания</a>
+                            <a href="{% url 'index' %}" class="header__link">3 компания</a>
                         </li>
                         <li class="header__item">
-                            <a href="{% url 'index' %}">1 компания</a>
+                            <a href="{% url 'index' %}" class="header__link">4 компания</a>
                         </li>
                         <li class="header__item">
-                            <a href="{% url 'index' %}">1 компания</a>
+                            <a href="{% url 'index' %}" class="header__link">5 компания</a>
+                        </li>
+                        <li class="header__item header__item__hide">
+                            <a href="{% url 'index' %}" class="header__link">6 компания</a>
+                        </li>
+                        <li class="header__item header__item__hide">
+                            <a href="{% url 'index' %}" class="header__link">7 компания</a>
+                        </li>
+                        <li class="header__item header__item__hide">
+                            <a href="{% url 'index' %}" class="header__link">8 компания</a>
+                        </li>
+                        <li class="header__item header__item__hide">
+                            <a href="{% url 'index' %}" class="header__link">9 компания</a>
+                        </li>
+                        <li class="header__item header__item__hide">
+                            <a href="{% url 'index' %}" class="header__link">10 компания</a>
                         </li>
                     </ul>
                 </nav>
+                <div class="burger__menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                </div>
             </div>
         </header>
     </div>
@@ -56,35 +76,36 @@
                 <p>Подбирайте надежный сервис ремонта ноутбуков по любому критерию: цена/качество, надежности, оценке покупателей.</p>
             </div>
         </section>
+        {% comment %} 1 фирма {% endcomment %}
         <section >
             <section class="firm">
                 <div class="firm__container rating__container">
                     <div class="firm__name">
-                        <div class="firm__logo">
-                            <picture><img src="/static/catalog/media/firms/estetik-logo.png" alt="1 компания"></picture>
+                        <div class="firm__logo" style="margin-right: 20px;">
+                            <picture><img src="/static/catalog/media/firms/logo1.png" alt="1 компания"></picture>
                         </div>
-                        <h2>Esthetic house</h2>
+                        <h2>Сервис АнтиОС</h2>
                     </div>
                     <div class="firm__body">
                         <article>
                             <div class="firm__body__container">
                                 <div class="firm__body__picture" style="max-width: 50%;">
-                                    <picture><img src="/static/catalog/media/firms/Ремонт ноутбука (1.1).jpg" alt="фото компании" style="max-width: 100%; max-height: 455px;"></picture>
+                                    <picture><img src="/static/catalog/media/firms/picture1.webp" alt="фото компании" style="max-width: 100%; max-height: 455px;"></picture>
                                 </div>
                                 <div class="firm__body__content">
                                     <div class="firm__body__info">
-                                        <p>Ремонт ноутбука: <a href="https://www.youtube.com" style="text-decoration: underline;">https://www.youtube.com</a></p>
+                                        <p>Находится по адресу: Москва, м. Бабушкинская, ул. Менжинского 36, ТЦ КАМП, 2 этаж, 38 пав.</p>
                                     </div>
                                     <div class="firm__body__btn">
-                                        <a href="#!" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                        <a href="https://pk-moskva.ru/babyshka/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                             <div class="firm__body__feedback">
                                 <h3>ОТЗЫВЫ</h3>
                                 <div class="firm__feedback">
                                     <div style="width:560px;height:120px;overflow:hidden;position:relative;">
-                                        <iframe style="width:65%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/23625531534?comments"></iframe>
+                                        <iframe style="width:65%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/123414787890?comments"></iframe>
                                         <a href="https://yandex.ru/maps/org/servisny_tsentr_hp/23625531534/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Сервисный центр HP на карте Москвы — Яндекс Карты</a>
                                     </div>
                                 </div>
@@ -93,26 +114,28 @@
                     </div>
                 </div>
             </section>
+            
+            {% comment %} 2 фирма {% endcomment %}
             <section class="firm">
                 <div class="firm__container rating__container">
                     <div class="firm__name">
                         <div class="firm__logo">
-                            <picture><img src="/static/catalog/media/firms/estetik-logo.png" alt="1 компания"></picture>
+                            <picture><img src="/static/catalog/media/firms/logo2.webp" alt="1 компания" style="max-width: 80px;"></picture>
                         </div>
-                        <h2>Esthetic house</h2>
-                    </div>
+                        <h2 style="margin-left: 20px;">remaster</h2> 
+                    </div> 
                     <div class="firm__body">
                         <article>
                             <div class="firm__body__container">
                                 <div class="firm__body__picture" style="max-width: 50%;">
-                                    <picture><img src="/static/catalog/media/firms/Ремонт ноутбука (1.1).jpg" alt="фото компании" style="max-width: 100%; max-height: 455px;"></picture>
+                                    <picture><img src="/static/catalog/media/firms/picture3.jpg" alt="фото компании" style="max-width: 100%; max-height: 455px;"></picture>
                                 </div>
                                 <div class="firm__body__content">
                                     <div class="firm__body__info">
-                                        <p>Ремонт ноутбука: <a href="https://www.youtube.com" style="text-decoration: underline;">https://www.youtube.com</a></p>
+                                        <p>Находится по адресу: Москва, Енисейская улица, 19, корп. 1</p>
                                     </div>
                                     <div class="firm__body__btn">
-                                        <a href="#!" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                        <a href="https://remaster-enisejskaja-ulitsa.clients.site/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +143,303 @@
                                 <h3>ОТЗЫВЫ</h3>
                                 <div class="firm__feedback">
                                     <div style="width:560px;height:120px;overflow:hidden;position:relative;">
-                                        <iframe style="width:65%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/23625531534?comments"></iframe>
+                                        <iframe style="width:65%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/53436621446?comments"></iframe>
+                                        <a href="https://yandex.ru/maps/org/servisny_tsentr_hp/23625531534/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Сервисный центр HP на карте Москвы — Яндекс Карты</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            {% comment %} 3 фирма {% endcomment %}
+            <section class="firm">
+                <div class="firm__container rating__container">
+                    <div class="firm__name">
+                        <div class="firm__logo">
+                            <picture><img src="/static/catalog/media/firms/logo3.gif" alt="1 компания" style="max-width: 100px;"></picture>
+                        </div>
+                        <h2 style="margin-left: 20px;">Фортис</h2>
+                    </div>
+                    <div class="firm__body">
+                        <article> 
+                            <div class="firm__body__container">
+                                <div class="firm__body__picture" style="max-width: 50%;">
+                                    <picture><img src="/static/catalog/media/firms/Ремонт ноутбука (1.1).jpg" alt="фото компании" style="max-width: 100%; max-height: 455px;"></picture>
+                                </div>
+                                <div class="firm__body__content">
+                                    <div class="firm__body__info">
+                                        <p>Находится по адресу: Москва, ул. Мясницкая д.22, офис 228</p>
+                                    </div>
+                                    <div class="firm__body__btn">
+                                        <a href="https://remont-laptops.ru/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="firm__body__feedback">
+                                <h3>ОТЗЫВЫ</h3>
+                                <div class="firm__feedback">
+                                    <div style="width:560px;height:120px;overflow:hidden;position:relative;">
+                                        <iframe style="width:65%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/1086211597?comments"></iframe>
+                                        <a href="https://yandex.ru/maps/org/servisny_tsentr_hp/23625531534/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Сервисный центр HP на карте Москвы — Яндекс Карты</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            {% comment %} 4 фирма {% endcomment %}
+            <section class="firm">
+                <div class="firm__container rating__container">
+                    <div class="firm__name">
+                        <div class="firm__logo">
+                            <picture><img src="/static/catalog/media/firms/logo4.webp" alt="1 компания" style="max-width: 90px; margin-bottom: 10px;"></picture>
+                        </div>
+                        <h2 style="margin-left: 20px;">Ram@shka</h2>
+                    </div>
+                    <div class="firm__body">
+                        <article>
+                            <div class="firm__body__container">
+                                <div class="firm__body__picture" style="max-width: 50%;">
+                                    <picture><img src="/static/catalog/media/firms/remont-notebook.jpg" alt="фото компании" style="max-width: 100%; max-height: 455px;"></picture>
+                                </div>
+                                <div class="firm__body__content">
+                                    <div class="firm__body__info">
+                                        <p>Находится по адресу: г.Москва, ул.Бауманская, 58А</p>
+                                    </div>
+                                    <div class="firm__body__btn">
+                                        <a href="https://ramashka24.ru/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="firm__body__feedback">
+                                <h3>ОТЗЫВЫ</h3>
+                                <div class="firm__feedback">
+                                    <div style="width:560px;height:120px;overflow:hidden;position:relative;">
+                                        <iframe style="width:65%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/133735358739?comments"></iframe>
+                                        <a href="https://yandex.ru/maps/org/servisny_tsentr_hp/23625531534/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Сервисный центр HP на карте Москвы — Яндекс Карты</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            {% comment %} 5 фирма {% endcomment %}
+            <section class="firm">
+                <div class="firm__container rating__container">
+                    <div class="firm__name">
+                        <div class="firm__logo">
+                            <picture><img src="/static/catalog/media/firms/logo5.webp" alt="1 компания" style="max-width: 100px;"></picture>
+                        </div>
+                        <h2 style="margin-left: 20px;">Ноут-911</h2>
+                    </div>
+                    <div class="firm__body">
+                        <article>
+                            <div class="firm__body__container">
+                                <div class="firm__body__picture" style="max-width: 50%;">
+                                    <picture><img src="/static/catalog/media/firms/picture5.jpg" alt="фото компании" style="max-width: 100%; max-height: 455px; width: 700px;"></picture>
+                                </div>
+                                <div class="firm__body__content">
+                                    <div class="firm__body__info">
+                                        <p>Находится по адресу: г. Москва, пр-т Будённого, д. 53, стр. 2, павильоны: Д-13, З-12</p>
+                                    </div>
+                                    <div class="firm__body__btn">
+                                        <a href="https://nout-911.ru/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="firm__body__feedback">
+                                <h3>ОТЗЫВЫ</h3>
+                                <div class="firm__feedback">
+                                    <div style="width:560px;height:120px;overflow:hidden;position:relative;">
+                                        <iframe style="width:65%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/1694227046?comments"></iframe>
+                                        <a href="https://yandex.ru/maps/org/servisny_tsentr_hp/23625531534/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Сервисный центр HP на карте Москвы — Яндекс Карты</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            {% comment %} 6 фирма {% endcomment %}
+            <section class="firm">
+                <div class="firm__container rating__container">
+                    <div class="firm__name">
+                        <div class="firm__logo">
+                            <picture><img src="/static/catalog/media/firms/logo6.png" alt="1 компания" style="max-width: 100px;"></picture>
+                        </div>
+                        <h2 style="margin-left: 20px;">Jabuka</h2>
+                    </div>
+                    <div class="firm__body">
+                        <article>
+                            <div class="firm__body__container">
+                                <div class="firm__body__picture" style="max-width: 50%;">
+                                    <picture><img src="/static/catalog/media/firms/picture6.jpg" alt="фото компании" style="max-width: 100%; max-height: 455px; width: 900px;"></picture>
+                                </div>
+                                <div class="firm__body__content">
+                                    <div class="firm__body__info">
+                                        <p>Находится по адресу: г.Москва, Хохловский переулок, дом 7-9, стр. 2, вход № 2, цокольный этаж, офис 11</p>
+                                    </div>
+                                    <div class="firm__body__btn">
+                                        <a href="https://jabuka.ru/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="firm__body__feedback">
+                                <h3>ОТЗЫВЫ</h3> 
+                                <div class="firm__feedback">
+                                    <div style="width:560px;height:120px;overflow:hidden;position:relative;">
+                                        <iframe style="width:65%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/1056620869?comments"></iframe>
+                                        <a href="https://yandex.ru/maps/org/servisny_tsentr_hp/23625531534/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Сервисный центр HP на карте Москвы — Яндекс Карты</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            {% comment %} 7 фирма {% endcomment %}
+            <section class="firm">
+                <div class="firm__container rating__container">
+                    <div class="firm__name">
+                        <div class="firm__logo">
+                            <picture><img src="/static/catalog/media/firms/priority-headline-logo.jfif" alt="1 компания" style="max-width: 100px;"></picture>
+                        </div>
+                        <h2 style="margin-left: 20px;">Q-service</h2>
+                    </div>
+                    <div class="firm__body">
+                        <article>
+                            <div class="firm__body__container">
+                                <div class="firm__body__picture" style="max-width: 50%;">
+                                    <picture><img src="/static/catalog/media/firms/picture7.jpeg" alt="фото компании" style="max-width: 100%; max-height: 455px;"></picture>
+                                </div>
+                                <div class="firm__body__content">
+                                    <div class="firm__body__info">
+                                        <p>Находится по адресу: г.Москва, Ломоносовский пр-т 23, около 22 подъезда</p>
+                                    </div>
+                                    <div class="firm__body__btn">
+                                        <a href="https://q-service.su/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="firm__body__feedback">
+                                <h3>ОТЗЫВЫ</h3> 
+                                <div class="firm__feedback">
+                                    <div style="width:560px;height:120px;overflow:hidden;position:relative;">
+                                        <iframe style="width:65%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/34119227502?comments"></iframe>
+                                        <a href="https://yandex.ru/maps/org/servisny_tsentr_hp/23625531534/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Сервисный центр HP на карте Москвы — Яндекс Карты</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            {% comment %} 8 фирма {% endcomment %}
+            <section class="firm">
+                <div class="firm__container rating__container">
+                    <div class="firm__name">
+                        <div class="firm__logo">
+                            <picture><img src="/static/catalog/media/firms/logo8.png" alt="1 компания" style="max-width: 150px;"></picture>
+                        </div>
+                        <h2 style="margin-left: 20px;">smart-service</h2>
+                    </div>
+                    <div class="firm__body">
+                        <article>
+                            <div class="firm__body__container">
+                                <div class="firm__body__picture" style="max-width: 50%;">
+                                    <picture><img src="/static/catalog/media/firms/picture8.jpg" alt="фото компании" style="max-width: 100%; max-height: 455px; height: 300px;"></picture>
+                                </div>
+                                <div class="firm__body__content">
+                                    <div class="firm__body__info">
+                                        <p>Находится по адресу: г.Москва, ул.Ткацкая, д.5, с.3</p>
+                                    </div>
+                                    <div class="firm__body__btn">
+                                        <a href="https://smart-service.ru/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="firm__body__feedback"> 
+                                <h3>ОТЗЫВЫ</h3> 
+                                <div class="firm__feedback">
+                                    <div style="width:560px;height:120px;overflow:hidden;position:relative;">
+                                        <iframe style="width:65%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/212220981738?comments"></iframe>
+                                        <a href="https://yandex.ru/maps/org/servisny_tsentr_hp/23625531534/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Сервисный центр HP на карте Москвы — Яндекс Карты</a>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </article> 
+                    </div>
+                </div>
+            </section>
+            {% comment %} 9 фирма {% endcomment %}
+            <section class="firm">
+                <div class="firm__container rating__container">
+                    <div class="firm__name">
+                        <div class="firm__logo">
+                            <picture><img src="/static/catalog/media/firms/logo9.webp" alt="1 компания" style="max-width: 90px; border-radius: 20px; margin-bottom: 10px;"></picture>
+                        </div>
+                        <h2 style="margin-left: 20px;">Сервисный центр Lab 2.0</h2>
+                    </div>
+                    <div class="firm__body">
+                        <article>
+                            <div class="firm__body__container">
+                                <div class="firm__body__picture" style="max-width: 50%;">
+                                    <picture><img src="/static/catalog/media/firms/picture9.jpg" alt="фото компании" style="max-width: 100%; max-height: 455px;"></picture>
+                                </div>
+                                <div class="firm__body__content">
+                                    <div class="firm__body__info">
+                                        <p>Находится по адресу: 1)г.Москва, ул.Петровка, д.2, тц.ЦУМ, 5 этаж, Сервисная зона. <br> 2)г.Москва, Ореховый б-р, д.14, корп.3, тц.Домодедовский, 3 этаж</p>
+                                    </div>
+                                    <div class="firm__body__btn">
+                                        <a href="https://lab2-0.ru/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="firm__body__feedback">
+                                <h3>ОТЗЫВЫ</h3>
+                                <div class="firm__feedback">
+                                    <div style="width:560px;height:120px;overflow:hidden;position:relative;">
+                                        <iframe style="width:65%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/196531950261?comments"></iframe>
+                                        <a href="https://yandex.ru/maps/org/servisny_tsentr_hp/23625531534/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Сервисный центр HP на карте Москвы — Яндекс Карты</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            {% comment %} 10 фирма {% endcomment %}
+            <section class="firm">
+                <div class="firm__container rating__container">
+                    <div class="firm__name">
+                        <div class="firm__logo">
+                            <picture><img src="/static/catalog/media/firms/free-icon-repairing-9385620.png" alt="2 компания" style="max-width: 100px;"></picture>
+                        </div>
+                        <h2 style="margin-left: 20px;">Remont-PC</h2>
+                    </div>
+                    <div class="firm__body">
+                        <article>
+                            <div class="firm__body__container">
+                                <div class="firm__body__picture" style="max-width: 100%;">
+                                    <picture><img src="/static/catalog/media/firms/picture10.webp" alt="фото компании" style="min-width: 100%; max-height: 455px;"></picture>
+                                </div>
+                                <div class="firm__body__content">
+                                    <div class="firm__body__info">
+                                        <p>Находится по адресу: г. Москва, р-н. Марьино, ул. Новочеркасский бульвар дом 41 корпус 1 . второй этаж павильоны №4 и №13</p>
+                                    </div>
+                                    <div class="firm__body__btn">
+                                        <a href="https://remont-pc.net/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="firm__body__feedback">
+                                <h3>ОТЗЫВЫ</h3> 
+                                <div class="firm__feedback">
+                                    <div style="width:560px;height:120px;overflow:hidden;position:relative;">
+                                        <iframe style="width:65%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/1063039589?comments"></iframe>
                                         <a href="https://yandex.ru/maps/org/servisny_tsentr_hp/23625531534/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Сервисный центр HP на карте Москвы — Яндекс Карты</a>
                                     </div>
                                 </div>
@@ -131,7 +450,12 @@
             </section>
         </section>
     </main>
+    <div class="wrapper">
+        <div class="footer">
+            
+        </div>
+    </div>
 
-    <script type="text/javascript" src="{% static 'js/main.js' %}"+></script>
+    <script type="text/javascript" src="{% static 'catalog/js/main.js' %}"></script>
 </body>
 </html>
