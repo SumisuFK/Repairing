@@ -17,34 +17,34 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="{% url 'index' %}"  class="header__link">1 компания</a>
+                            <a href="#one"  class="header__link">1 компания</a>
                         </li>
                         <li class="header__item">
-                            <a href="{% url 'index' %}" class="header__link">2 компания</a>
+                            <a href="#second" class="header__link">2 компания</a>
                         </li>
                         <li class="header__item">
-                            <a href="{% url 'index' %}" class="header__link">3 компания</a>
+                            <a href="#third" class="header__link">3 компания</a>
                         </li>
                         <li class="header__item">
-                            <a href="{% url 'index' %}" class="header__link">4 компания</a>
+                            <a href="#fourth" class="header__link">4 компания</a>
                         </li>
                         <li class="header__item">
-                            <a href="{% url 'index' %}" class="header__link">5 компания</a>
+                            <a href="#fifth" class="header__link">5 компания</a>
                         </li>
                         <li class="header__item header__item__hide">
-                            <a href="{% url 'index' %}" class="header__link">6 компания</a>
+                            <a href="#sixth" class="header__link">6 компания</a>
                         </li>
                         <li class="header__item header__item__hide">
-                            <a href="{% url 'index' %}" class="header__link">7 компания</a>
+                            <a href="#seventh" class="header__link">7 компания</a>
                         </li>
                         <li class="header__item header__item__hide">
-                            <a href="{% url 'index' %}" class="header__link">8 компания</a>
+                            <a href="#eighth" class="header__link">8 компания</a>
                         </li>
                         <li class="header__item header__item__hide">
-                            <a href="{% url 'index' %}" class="header__link">9 компания</a>
+                            <a href="#nineth" class="header__link">9 компания</a>
                         </li>
                         <li class="header__item header__item__hide">
-                            <a href="{% url 'index' %}" class="header__link">10 компания</a>
+                            <a href="#tenth" class="header__link">10 компания</a>
                         </li>
                     </ul>
                 </nav>
@@ -63,21 +63,21 @@
                     <div class="rating__body">
                         <h1>ТОП 10 СЕРВИСОВ ПО РЕМОНТУ НОУТБУКА В МОСКВЕ.</h1>
                         <div class="rating__btn">
-                            <a href="#!" class="btn">РЕМОНТ НОУТБУКОВ</a>
+                            <a href="#!" class="main__btn">РЕМОНТ НОУТБУКОВ</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="intro">
+        <section class="intro background">
             <div class="intro__body rating__container">
-                <p>Рейтинг сервисов по ремонту ноутбуков в Москве 2022-2023 года содержит ТОП-10 фирм, занимающихся ремонтом ноутбуков, компьютеров и телефонов. Так же некоторые компании профилируются по ремонту другой бытовой техники</p>
+                <br><p>Рейтинг сервисов по ремонту ноутбуков в Москве 2022-2023 года содержит ТОП-10 фирм, занимающихся ремонтом ноутбуков, компьютеров и телефонов. Так же некоторые компании профилируются по ремонту другой бытовой техники</p>
                 <p>Вы найдете актуальную информацию об отзывах клиентов.</p>
                 <p>Подбирайте надежный сервис ремонта ноутбуков по любому критерию: цена/качество, надежности, оценке покупателей.</p>
             </div>
         </section>
         {% comment %} 1 фирма {% endcomment %}
-        <section >
+        <section id="one">
             <section class="firm">
                 <div class="firm__container rating__container">
                     <div class="firm__name">
@@ -97,7 +97,7 @@
                                         <p>Находится по адресу: Москва, м. Бабушкинская, ул. Менжинского 36, ТЦ КАМП, 2 этаж, 38 пав.</p>
                                     </div>
                                     <div class="firm__body__btn">
-                                        <a href="https://pk-moskva.ru/babyshka/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                        <a href="https://pk-moskva.ru/babyshka/" class="btn" style="width: 120%;" target="_blank">РЕМОНТ НОУТБУКА</a>
                                     </div>
                                 </div> 
                             </div>
@@ -116,7 +116,7 @@
             </section>
             
             {% comment %} 2 фирма {% endcomment %}
-            <section class="firm">
+            <section class="firm" id="second">
                 <div class="firm__container rating__container">
                     <div class="firm__name">
                         <div class="firm__logo">
@@ -135,7 +135,7 @@
                                         <p>Находится по адресу: Москва, Енисейская улица, 19, корп. 1</p>
                                     </div>
                                     <div class="firm__body__btn">
-                                        <a href="https://remaster-enisejskaja-ulitsa.clients.site/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                        <a href="https://remaster-enisejskaja-ulitsa.clients.site/" class="btn" style="width: 120%;" target="_blank">РЕМОНТ НОУТБУКА</a>
                                     </div>
                                 </div>
                             </div>
@@ -153,7 +153,7 @@
                 </div>
             </section>
             {% comment %} 3 фирма {% endcomment %}
-            <section class="firm">
+            <section class="firm" id="third">
                 <div class="firm__container rating__container">
                     <div class="firm__name">
                         <div class="firm__logo">
@@ -172,7 +172,7 @@
                                         <p>Находится по адресу: Москва, ул. Мясницкая д.22, офис 228</p>
                                     </div>
                                     <div class="firm__body__btn">
-                                        <a href="https://remont-laptops.ru/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                        <a href="https://remont-laptops.ru/" class="btn" style="width: 120%;" target="_blank">РЕМОНТ НОУТБУКА</a>
                                     </div>
                                 </div>
                             </div>
@@ -190,7 +190,7 @@
                 </div>
             </section>
             {% comment %} 4 фирма {% endcomment %}
-            <section class="firm">
+            <section class="firm" id="fourth">
                 <div class="firm__container rating__container">
                     <div class="firm__name">
                         <div class="firm__logo">
@@ -209,7 +209,7 @@
                                         <p>Находится по адресу: г.Москва, ул.Бауманская, 58А</p>
                                     </div>
                                     <div class="firm__body__btn">
-                                        <a href="https://ramashka24.ru/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                        <a href="https://ramashka24.ru/" class="btn" style="width: 120%;" target="_blank">РЕМОНТ НОУТБУКА</a>
                                     </div>
                                 </div>
                             </div> 
@@ -227,7 +227,7 @@
                 </div>
             </section>
             {% comment %} 5 фирма {% endcomment %}
-            <section class="firm">
+            <section class="firm" id="fifth">
                 <div class="firm__container rating__container">
                     <div class="firm__name">
                         <div class="firm__logo">
@@ -246,7 +246,7 @@
                                         <p>Находится по адресу: г. Москва, пр-т Будённого, д. 53, стр. 2, павильоны: Д-13, З-12</p>
                                     </div>
                                     <div class="firm__body__btn">
-                                        <a href="https://nout-911.ru/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                        <a href="https://nout-911.ru/" class="btn" style="width: 120%;" target="_blank">РЕМОНТ НОУТБУКА</a>
                                     </div>
                                 </div>
                             </div> 
@@ -264,7 +264,7 @@
                 </div>
             </section>
             {% comment %} 6 фирма {% endcomment %}
-            <section class="firm">
+            <section class="firm" id="sixth">
                 <div class="firm__container rating__container">
                     <div class="firm__name">
                         <div class="firm__logo">
@@ -283,7 +283,7 @@
                                         <p>Находится по адресу: г.Москва, Хохловский переулок, дом 7-9, стр. 2, вход № 2, цокольный этаж, офис 11</p>
                                     </div>
                                     <div class="firm__body__btn">
-                                        <a href="https://jabuka.ru/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                        <a href="https://jabuka.ru/" class="btn" style="width: 120%;" target="_blank">РЕМОНТ НОУТБУКА</a>
                                     </div>
                                 </div>
                             </div>
@@ -301,7 +301,7 @@
                 </div>
             </section>
             {% comment %} 7 фирма {% endcomment %}
-            <section class="firm">
+            <section class="firm" id="seventh">
                 <div class="firm__container rating__container">
                     <div class="firm__name">
                         <div class="firm__logo">
@@ -320,7 +320,7 @@
                                         <p>Находится по адресу: г.Москва, Ломоносовский пр-т 23, около 22 подъезда</p>
                                     </div>
                                     <div class="firm__body__btn">
-                                        <a href="https://q-service.su/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                        <a href="https://q-service.su/" class="btn" style="width: 120%;" target="_blank">РЕМОНТ НОУТБУКА</a>
                                     </div>
                                 </div>
                             </div>
@@ -338,7 +338,7 @@
                 </div>
             </section>
             {% comment %} 8 фирма {% endcomment %}
-            <section class="firm">
+            <section class="firm" id="eighth">
                 <div class="firm__container rating__container">
                     <div class="firm__name">
                         <div class="firm__logo">
@@ -350,14 +350,14 @@
                         <article>
                             <div class="firm__body__container">
                                 <div class="firm__body__picture" style="max-width: 50%;">
-                                    <picture><img src="/static/catalog/media/firms/picture8.jpg" alt="фото компании" style="max-width: 100%; max-height: 455px; height: 300px;"></picture>
+                                    <picture><img src="/static/catalog/media/firms/picture8.jpg" alt="фото компании" style="max-width: 100%; max-height: 455px; height: 100%;"></picture>
                                 </div>
                                 <div class="firm__body__content">
                                     <div class="firm__body__info">
                                         <p>Находится по адресу: г.Москва, ул.Ткацкая, д.5, с.3</p>
                                     </div>
                                     <div class="firm__body__btn">
-                                        <a href="https://smart-service.ru/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                        <a href="https://smart-service.ru/" class="btn" style="width: 120%;" target="_blank">РЕМОНТ НОУТБУКА</a>
                                     </div>
                                 </div>
                             </div>
@@ -375,7 +375,7 @@
                 </div>
             </section>
             {% comment %} 9 фирма {% endcomment %}
-            <section class="firm">
+            <section class="firm" id="nineth">
                 <div class="firm__container rating__container">
                     <div class="firm__name">
                         <div class="firm__logo">
@@ -391,10 +391,10 @@
                                 </div>
                                 <div class="firm__body__content">
                                     <div class="firm__body__info">
-                                        <p>Находится по адресу: 1)г.Москва, ул.Петровка, д.2, тц.ЦУМ, 5 этаж, Сервисная зона. <br> 2)г.Москва, Ореховый б-р, д.14, корп.3, тц.Домодедовский, 3 этаж</p>
+                                        <p>Находится по адресу: <br>1)г.Москва, ул.Петровка, д.2, тц.ЦУМ, 5 этаж, Сервисная зона. <br> 2)г.Москва, Ореховый б-р, д.14, корп.3, тц.Домодедовский, 3 этаж</p>
                                     </div>
                                     <div class="firm__body__btn">
-                                        <a href="https://lab2-0.ru/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                        <a href="https://lab2-0.ru/" class="btn" style="width: 120%;" target="_blank">РЕМОНТ НОУТБУКА</a>
                                     </div>
                                 </div>
                             </div> 
@@ -412,7 +412,7 @@
                 </div>
             </section>
             {% comment %} 10 фирма {% endcomment %}
-            <section class="firm">
+            <section class="firm" id="tenth">
                 <div class="firm__container rating__container">
                     <div class="firm__name">
                         <div class="firm__logo">
@@ -424,14 +424,14 @@
                         <article>
                             <div class="firm__body__container">
                                 <div class="firm__body__picture" style="max-width: 100%;">
-                                    <picture><img src="/static/catalog/media/firms/picture10.webp" alt="фото компании" style="min-width: 100%; max-height: 455px;"></picture>
+                                    <picture><img src="/static/catalog/media/firms/picture10.webp" alt="фото компании" style="min-width: 100%; max-height: 455px; min-height: 50%;" class="picture__10"></picture>
                                 </div>
                                 <div class="firm__body__content">
                                     <div class="firm__body__info">
                                         <p>Находится по адресу: г. Москва, р-н. Марьино, ул. Новочеркасский бульвар дом 41 корпус 1 . второй этаж павильоны №4 и №13</p>
                                     </div>
                                     <div class="firm__body__btn">
-                                        <a href="https://remont-pc.net/" class="btn" style="width: 120%;">РЕМОНТ НОУТБУКА</a>
+                                        <a href="https://remont-pc.net/" class="btn" style="width: 120%;" target="_blank">РЕМОНТ НОУТБУКА</a>
                                     </div>
                                 </div>
                             </div>
